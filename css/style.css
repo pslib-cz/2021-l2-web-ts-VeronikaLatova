@@ -1,0 +1,139 @@
+html {
+    font-family: Roboto slab, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0ad7d;
+}
+
+.menu__h1 {
+    color: #000000;
+    cursor: pointer;
+} 
+
+.menu__h1:hover {
+    color: #ffffff;
+}
+
+h1 {
+    margin: none;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.menu__item:hover {
+    color: #ffffff;
+}
+
+.menu__odrazky {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 ;
+}
+
+.uvod__img {
+    height: 40vh;
+}
+
+.uvod__img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uvod__title {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.uvod__nadpis {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.section--seda {
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vw; */
+}
+
+.section__img {
+    width: 100%;
+    display: block;
+}
+
+.section__imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__container {
+    position: relative;
+}
+
+.section__title {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 0;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.footer--seda {
+    background-color: #c4c4c4;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+    .section__container {margin: 0; }
+    .section__imgs {flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;}
+    .menu__odrazky {flex-direction: row; align-self: center; margin-top: 1em;}
+    .menu__item {margin: 2em;}
+    .menu {flex-direction: row; justify-content: space-around; align-items: center;}
+    .uvod__nadpis {text-align: left; margin-left: 3em;}
+    .uvod__title {text-align: left; margin-left: 3em;}
+}
